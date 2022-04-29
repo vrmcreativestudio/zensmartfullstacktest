@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.46970de4.css",
-    "main.js": "/static/js/main.82157d35.js",
-    "index.html": "/index.html",
-    "main.46970de4.css.map": "/static/css/main.46970de4.css.map",
-    "main.82157d35.js.map": "/static/js/main.82157d35.js.map"
+    "main.css": "/zensmartfullstacktest/static/css/main.46970de4.css",
+    "main.js": "/zensmartfullstacktest/static/js/main.82157d35.js",
+    "index.html": "/zensmartfullstacktest/index.html",
+    "main.46970de4.css.map": "/zensmartfullstacktest/static/css/main.46970de4.css.map",
+    "main.82157d35.js.map": "/zensmartfullstacktest/static/js/main.82157d35.js.map"
   },
   "entrypoints": [
     "static/css/main.46970de4.css",
