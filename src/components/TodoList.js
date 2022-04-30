@@ -49,8 +49,8 @@ class TodoList extends Component {
 
   render() {
     return(
-      <Container>
-        <h1>Todo List Page</h1>
+      <Container id="todoList">
+        <h1>Todo List</h1>
         <Button variant="success" className="mb-2" size="sm" onClick={() => this.setState({showAddNewTodo: true})}>Add New Todo</Button>
         <Table striped hover>
           <tbody>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 
 import TodoList from './components/TodoList';
@@ -41,33 +41,22 @@ function App() {
     <>
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="/">ZenSmart React Fullstack Test</Navbar.Brand>
+          <Navbar.Brand href="#">ZenSmart React Fullstack Test</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="justify-content-end flex-grow-1">
-              <Nav.Link href="/todo-list">Todo List</Nav.Link>
-              <Nav.Link href="/test-library">Test Library</Nav.Link>
+              <Nav.Link href="#todoList">Todo List</Nav.Link>
+              <Nav.Link href="#testLibrary">Test Library</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Router>
-          <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/todo-list" element={<TodoList todoList={todoListItems} onItemClick={onItemClick} />} />
-          <Route path="/test-library" element={<TestLibrary />} />
-        </Routes>
-      </Router>
+      <Container>
+        <TodoList todoList={todoListItems} onItemClick={onItemClick} />
+        <TestLibrary />
+      </Container>
     </>
   );
 }
 
 export default App;
-
-function Home() {
-  return(
-    <Container>
-      <h1>Home Page</h1>
-    </Container>
-  );
-}

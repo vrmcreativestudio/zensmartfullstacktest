@@ -4,8 +4,8 @@ import { Container, Button, DropdownButton, Dropdown, Table } from 'react-bootst
 class TestLibrary extends Component {
   render() {
     return(
-      <Container>
-        <h1>Test Library Page</h1>
+      <Container id="testLibrary">
+        <h1>Test Library</h1>
         <div className="panels-container">
           <h4><b>PANELS</b></h4>
           <div className="panel-sample">
